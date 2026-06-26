@@ -5,3 +5,8 @@ const minutesContainer = document.getElementById('minutes');
 const secondsContainer = document.getElementById('seconds');
 
 const targetDate = new Date('January 1, 2029 00:00:00').getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const difference = targetDate - now;
+}
