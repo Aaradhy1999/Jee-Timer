@@ -29,5 +29,5 @@ function updateCountdown() {
     secondsContainer.innerText = String(calculatedSeconds).padStart(2, '0');
 }
 
-    setInterval(updateCountdown, 1000);
-    updateCountdown();
+setInterval(updateCountdown, 1000);
+updateCountdown();
