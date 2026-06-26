@@ -21,4 +21,10 @@ function updateCountdown() {
     const calculatedHours = Math.floor((difference % day) / hour);
     const calculatedMinutes = Math.floor((difference % hour) / minute);
     const calculatedSeconds = Math.floor((difference % minute) / second);
+
+    monthsContainer.innerText = String(calculatedMonths).padStart(2, '0');
+    daysContainer.innerText = String(calculatedDays).padStart(2, '0');
+    hoursContainer.innerText = String(calculatedHours).padStart(2, '0');
+    minutesContainer.innerText = String(calculatedMinutes).padStart(2, '0');
+    secondsContainer.innerText = String(calculatedSeconds).padStart(2, '0');
 }
