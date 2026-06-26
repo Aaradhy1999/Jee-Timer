@@ -35,3 +35,11 @@ h1 {
     gap: 20px;
     justify-content: center;
 }
+
+.time {
+    background: rgba(30, 41, 59, 0.8);
+    padding: 20px 30px;
+    border-radius: 12px;
+    min-width: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
