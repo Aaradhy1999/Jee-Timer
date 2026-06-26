@@ -8,3 +8,8 @@ body {
     align-items: center;
     overflow: hidden;
 }
+
+.timer {
+    text-align: center;
+    padding: 20px;
+}
