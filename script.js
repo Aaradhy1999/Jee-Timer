@@ -10,6 +10,16 @@ function updateCountdown() {
     const now = new Date().getTime();
     const difference = targetDate - now;  /*getTime() give result in millisecond here we have to convert it in second
                                             hence these convertion constants are used*/
+    if (difference <= 0) {
+        document.querySelector(".timer").innerHTML = `
+            <h1>PREPARATION PHASE: COMPLETE</h1>
+            <p class="subtitle" style="color: #00ffcc; font-weight: bold; letter-spacing: 3px;">
+                The Countdown has Ended. Go Conquer the Paper!
+            </p>
+        `;
+        clearInterval(timerInterval);
+        return;
+    }
     const second = 1000;                     
     const minute = second * 60;
     const hour = minute * 60;
@@ -29,5 +39,5 @@ function updateCountdown() {
     secondsContainer.innerText = String(calculatedSeconds).padStart(2, '0');
 }
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
